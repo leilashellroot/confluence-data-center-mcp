@@ -1,0 +1,49 @@
+{
+  "name": "@leilashellroot/confluence-data-center-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Confluence Server/Data Center — content, spaces, comments, attachments, and context aggregation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "confluence-data-center-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "keywords": [
+    "mcp",
+    "confluence",
+    "data-center",
+    "model-context-protocol",
+    "atlassian"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leilashellroot/confluence-data-center-mcp.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.18.1",
+    "form-data": "^4.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
