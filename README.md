@@ -4,6 +4,8 @@ MCP server for Confluence Server/Data Center. It gives AI assistants access to c
 
 This project is an independent community package and is not affiliated with Atlassian.
 
+This project is based on and credits [b1ff/atlassian-dc-mcp](https://github.com/b1ff/atlassian-dc-mcp).
+
 ## Features
 
 - Content CRUD for pages, blog posts, and comments

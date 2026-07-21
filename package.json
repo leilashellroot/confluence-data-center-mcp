@@ -1,6 +1,6 @@
 {
   "name": "@leilashellroot/confluence-data-center-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Confluence Server/Data Center — content, spaces, comments, attachments, and context aggregation",
   "type": "module",
   "main": "dist/index.js",
